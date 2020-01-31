@@ -1,0 +1,61 @@
+.social {
+  position: fixed;
+  padding: 5px;
+  left: 0;
+  background-color: rgb(195, 101, 253);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: transform 0.5s ease;
+  &.hide {
+    transition: transform 0.5s ease;
+    transform: translateX(-90%);
+  }
+  & .arrow {
+    position: absolute;
+    top: 40%;
+    right: -10%;
+    z-index: -1;
+  }
+  &__wrapper {
+    padding: 1px;
+    background: white;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  &__vk {
+  }
+  &__tg {
+  }
+  &__link {
+    &_image {
+      padding: 5px;
+      width: 20px;
+    }
+  }
+}
+
+$right: -45deg;
+$left: 135deg;
+$up: -135deg;
+$down: 45deg;
+
+.arrow {
+  border: solid black;
+  background-color: white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  &.right {
+    transform: rotate($right);
+  }
+  &.left {
+    transform: rotate($left);
+  }
+  &.down {
+    transform: rotate($down);
+  }
+  &.up {
+    transform: rotate($up);
+  }
+}

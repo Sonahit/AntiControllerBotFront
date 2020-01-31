@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 20px 100px;
+  &__logo {
+    p {
+      font-family: "Pacifico", cursive, sans-serif;
+      font-size: 40px;
+    }
+  }
+}

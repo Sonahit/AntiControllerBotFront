@@ -2,11 +2,11 @@ chunks_size = 16;
 
 let user_config = {
   chunks_number: 0,
-  url: "http://127.0.0.1:8000/bus_stop/brest/dirty?time=50000"
+  url: `${location.origin}/bus_stop/brest/dirty?time=50000`
 };
 
 function url_change(city) {
-  return `http://127.0.0.1:8000/bus_stop/${city}/dirty?time=50000`;
+  return `${location.origin}/bus_stop/${city}/dirty?time=50000`;
 }
 
 function chunks_creater(arr, chunkSize) {
